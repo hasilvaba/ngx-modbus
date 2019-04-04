@@ -40,7 +40,7 @@ gulp.task('build', ['nodejs'])
 gulp.task('publish', ['build', 'icons', 'vendor', 'docs'])
 
 gulp.task('clean', function () {
-  return gulp.src(['node-modbus', 'docs/gen', 'maps', 'code'])
+  return gulp.src(['ngx-modbus', 'docs/gen', 'maps', 'code'])
     .pipe(clean({ force: true }))
 })
 
@@ -58,11 +58,11 @@ gulp.task('docExamples', function () {
 })
 
 gulp.task('icons', function () {
-  return gulp.src('src/icons/**/*').pipe(gulp.dest('node-modbus/icons'))
+  return gulp.src('src/icons/**/*').pipe(gulp.dest('ngx-modbus/icons'))
 })
 
 gulp.task('vendor', function () {
-  return gulp.src('src/public/**/*').pipe(gulp.dest('node-modbus/public'))
+  return gulp.src('src/public/**/*').pipe(gulp.dest('ngx-modbus/public'))
 })
 
 gulp.task('nodejs', function (cb) {
@@ -73,7 +73,7 @@ gulp.task('nodejs', function (cb) {
     .pipe(replace(anchor, 'require(\'source-map-support\').install()'))
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(uglify())
-    .pipe(sourcemaps.write('maps')), gulp.dest('node-modbus')],
+    .pipe(sourcemaps.write('maps')), gulp.dest('ngx-modbus')],
   cb
   )
 })

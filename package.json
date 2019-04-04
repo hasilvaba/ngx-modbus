@@ -1,6 +1,6 @@
 {
   "name": "ngx-modbus",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sum of implementations for the Serial/TCP Modbus protocol.",
   "author": "Hugo Silva <hasilva.ba@gmail.com>",
   "main": "./ngx-modbus/modbus.js",

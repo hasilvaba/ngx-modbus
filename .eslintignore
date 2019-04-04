@@ -2,5 +2,5 @@ docs/
 examples/
 extras/
 images/
-node-modbus/
+ngx-modbus/
 node_modules/

@@ -1,6 +1,6 @@
 node_modules
 *.swp
-node-modbus
+ngx-modbus
 docs/gen
 docs/examples
 docs/icons
